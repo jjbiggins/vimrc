@@ -1,10 +1,13 @@
-" File              : .vimrc
-" Author            : Joe Biggins <jjbiggins@joebiggins.io>
-" Last Modified Date: 26.05.2020
+" 1
+" File                  : .vimrc
+" Author                : Joe Biggins <jjbiggins@joebiggins.io>
+" Date                  : 15.06.2020
+" Last Modified Date    : 15.06.2020
+" Last Modified By      : Joe Biggins <jjbiggins@joebiggins.io>
 " Colors {{{
-syntax on           " enable syntax processing
-"colorscheme badwolf
-set termguicolors
+syntax on         " enable syntax processing
+colorscheme molokai
+"  set termguicolors
 " }}}
 " Misc {{{
 set backspace=indent,eol,start
@@ -21,7 +24,7 @@ filetype indent on
 filetype plugin on
 set autoindent
 " }}}
-" UI Layout {{{
+"za UI Layout {{{
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set nocursorline        " highlight current line
@@ -110,6 +113,7 @@ set writebackup
 " }}}
 " Vim Plug {{{
 call plug#begin('~/.vim/plugged')
+Plug 'flazz/vim-colorschemes'
 Plug 'alpertuna/vim-header'
 Plug 'bling/vim-airline'
 Plug 'derekwyatt/vim-scala'
